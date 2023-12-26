@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+img {
+  height: auto;
+  transition: 0.3s ease all;
+}
+
+img:hover {
+  scale: 102%;
+}
+
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
