@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-cyan-700 p-4 md:px-48">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div>
@@ -26,13 +26,13 @@ const Navbar = () => {
           </div>
           <div className={`lg:flex ${isMenuOpen ? "block" : "hidden"} gap-9`}>
             <Link href="/">
-              <p className="text-white ">Home</p>
+              <p className="text-white hover:text-blue-600 hover:underline ">Home</p>
             </Link>
             <Link href="/about">
-              <p className="text-white ">About</p>
+              <p className="text-white hover:text-blue-600 hover:underline ">About</p>
             </Link>
             <Link href="/contact">
-              <p className="text-white">Contact</p>
+              <p className="text-white hover:text-blue-600 hover:underline">Contact</p>
             </Link>
           </div>
         </div>

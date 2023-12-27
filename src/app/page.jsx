@@ -1,13 +1,14 @@
 import HomePage from "@/components/HomePage";
+import ServicePage from "@/components/ServicePage";
 
 export default function Home() {
   return (
     <div>
-      <section className="bg-red-700">
+      <section className="w-full">
         <HomePage />
       </section>
-      <section className="bg-blue-700">
-        <HomePage />
+      <section className="w-full">
+        <ServicePage />
       </section>
     </div>
   );
