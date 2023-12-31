@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div>
             <Link href="/">
-              <p className="text-white text-lg font-bold">Bengkel App</p>
+              <p className="text-white text-lg font-bold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Bengkel App</p>
             </Link>
           </div>
           <div className="lg:hidden">
@@ -26,13 +26,13 @@ const Navbar = () => {
           </div>
           <div className={`lg:flex ${isMenuOpen ? "block" : "hidden"} gap-9`}>
             <Link href="/">
-              <p className="text-white hover:text-blue-600 hover:underline ">Home</p>
+              <p className="text-white hover:text-blue-600 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Home</p>
             </Link>
             <Link href="/about">
-              <p className="text-white hover:text-blue-600 hover:underline ">About</p>
+              <p className="text-white hover:text-blue-600 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">About</p>
             </Link>
             <Link href="/contact">
-              <p className="text-white hover:text-blue-600 hover:underline">Contact</p>
+              <p className="text-white hover:text-blue-600 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact</p>
             </Link>
           </div>
         </div>
