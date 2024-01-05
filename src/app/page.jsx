@@ -1,6 +1,8 @@
 import HomePage from "@/components/HomePage";
 import ServicePage from "@/components/ServicePage";
 import About from "@/components/About";
+import ProductPage from "@/components/ProductPage";
+import MapPage from "@/components/MapPage";
 
 export default function Home() {
   return (
@@ -13,6 +15,12 @@ export default function Home() {
       </section>
       <section className="">
         <ServicePage />
+      </section>
+      <section className="">
+        <ProductPage />
+      </section>
+      <section className="">
+        <MapPage />
       </section>
     </div>
   );

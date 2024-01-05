@@ -31,6 +31,9 @@ const Navbar = () => {
             <Link href="/about">
               <p className="text-white hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">About</p>
             </Link>
+            <Link href="/product">
+              <p className="text-white hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Product</p>
+            </Link>
             <Link href="/contact">
               <p className="text-white hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact</p>
             </Link>
