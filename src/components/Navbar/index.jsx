@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,32 +10,48 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className="bg-cyan-700 p-6 md:px-48">
+    <nav className={scrolled ? " fixed top-0 w-full bg-transparent text-black p-6 md:px-48 shadow-lg" : "fixed top-0 w-full bg-cyan-700 p-6 md:px-48 text-white"}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div>
             <Link href="/">
-              <p className="text-white text-lg font-bold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 animate__animated animate__bounceInLeft">Bengkel App</p>
+              <p className=" text-lg font-bold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 animate__animated animate__bounceInLeft">Bengkel App</p>
             </Link>
           </div>
           <div className="lg:hidden">
-            <button onClick={toggleMenu} className="text-white focus:outline-none">
+            <button onClick={toggleMenu} className=" focus:outline-none">
               {isMenuOpen ? "Close" : "Menu"}
             </button>
           </div>
           <div className={`lg:flex ${isMenuOpen ? "block" : "hidden"} gap-9 animate__animated animate__backInRight`}>
             <Link href="/">
-              <p className="text-white hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Home</p>
+              <p className=" hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Home</p>
             </Link>
             <Link href="/about">
-              <p className="text-white hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">About</p>
+              <p className=" hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">About</p>
             </Link>
             <Link href="/product">
-              <p className="text-white hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Product</p>
+              <p className=" hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Product</p>
             </Link>
             <Link href="/contact">
-              <p className="text-white hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact</p>
+              <p className=" hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact</p>
             </Link>
           </div>
         </div>

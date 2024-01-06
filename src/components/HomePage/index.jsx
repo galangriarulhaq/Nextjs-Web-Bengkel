@@ -3,7 +3,7 @@ import "animate.css";
 
 const Page = () => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:py-32 py-12 md:p-24 p-8 w-full ">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 md:py-36 py-24 md:p-24 p-8 w-full ">
       <div className="md:px-16 w-auto animate__animated animate__bounceInLeft">
         <h4 className="font-bold md:text-2xl text-xl text-cyan-500 underline py-4">Bengkel App</h4>
         <h1 className="md:text-4xl text-2xl font-serif ">TOKO BENGKEL </h1>
