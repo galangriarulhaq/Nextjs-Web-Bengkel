@@ -17,17 +17,17 @@ const Page = () => {
         <h1 className="text-3xl mb-4 font-serif ">Sosial Media </h1>
         <p className="text-xl text-gray-900 mb-4">Jika Anda ingin tahu lebih banyak tentang kami, Anda dapat menghubungi dan mengikuti media sosial di bawah ini.</p>
         <div className="flex flex-row gap-8 mb-4">
-          <div>
+          <div className="hover:text-blue-600">
             <Link href="">
               <FacebookLogo size={32} />
             </Link>
           </div>
-          <div>
+          <div className="hover:text-blue-600">
             <Link href="">
               <InstagramLogo size={32} />
             </Link>
           </div>
-          <div>
+          <div className="hover:text-blue-600">
             <Link href="">
               <WhatsappLogo size={32} />
             </Link>
