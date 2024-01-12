@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 0) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -27,12 +27,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={scrolled ? " fixed top-0 w-full bg-transparent text-black p-6 md:px-48 shadow-lg" : "fixed top-0 w-full bg-cyan-700 p-6 md:px-48 text-white"}>
+    <nav className={scrolled ? " fixed top-0 w-full backdrop-blur-xl text-black p-6 md:px-48 shadow-lg" : "fixed top-0 w-full bg-black p-6 md:px-48 text-white"}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <div>
             <Link href="/">
-              <p className=" text-lg font-bold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 animate__animated animate__bounceInLeft">Bengkel App</p>
+              <p className=" text-3xl font-bold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 animate__animated animate__bounceInLeft ">MMS</p>
             </Link>
           </div>
           <div className="lg:hidden">
@@ -42,16 +42,16 @@ const Navbar = () => {
           </div>
           <div className={`lg:flex ${isMenuOpen ? "block" : "hidden"} gap-9 animate__animated animate__backInRight`}>
             <Link href="/">
-              <p className=" hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Home</p>
+              <p className=" hover:text-blue-600 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Home</p>
             </Link>
             <Link href="/about">
-              <p className=" hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">About</p>
+              <p className=" hover:text-blue-600 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">About</p>
             </Link>
             <Link href="/product">
-              <p className=" hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Product</p>
+              <p className=" hover:text-blue-600 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Product</p>
             </Link>
             <Link href="/contact">
-              <p className=" hover:text-blue-400 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact</p>
+              <p className=" hover:text-blue-600 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Contact</p>
             </Link>
           </div>
         </div>

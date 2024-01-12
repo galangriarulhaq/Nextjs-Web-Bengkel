@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 bg-transparent shadow-md rounded-md">
+    <div className="container mx-auto p-4 bg-transparent shadow-md rounded-md ">
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
