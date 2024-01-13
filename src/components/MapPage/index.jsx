@@ -9,7 +9,7 @@ const Page = () => {
       <div className="mb-6">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8  ">
           <div className="">
-            <h1 className=" text-3xl underline font-serif p-4 flex justify-center items-center">
+            <h1 className=" text-3xl hover:underline cursor-pointer font-serif p-4 flex justify-center items-center">
               Lokasi
               <MapPinLine size={32} />
             </h1>
@@ -26,7 +26,7 @@ const Page = () => {
             </div>
           </div>
           <div className="">
-            <h1 className=" text-3xl underline font-serif p-4 mb-2 flex justify-center items-center">
+            <h1 className=" text-3xl hover:underline cursor-pointer font-serif p-4 mb-2 flex justify-center items-center">
               Kontak
               <TelegramLogo size={32} />
             </h1>

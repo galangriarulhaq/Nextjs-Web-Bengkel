@@ -1,5 +1,6 @@
 "use client";
 
+import { List, XCircle } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -37,7 +38,7 @@ const Navbar = () => {
           </div>
           <div className="lg:hidden">
             <button onClick={toggleMenu} className=" focus:outline-none">
-              {isMenuOpen ? "Close" : "Menu"}
+              {isMenuOpen ? <XCircle size={32} /> : <List size={32} />}
             </button>
           </div>
           <div className={`lg:flex ${isMenuOpen ? "block" : "hidden"} gap-9 animate__animated animate__backInRight`}>

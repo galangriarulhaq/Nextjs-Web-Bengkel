@@ -3,7 +3,7 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="md:p-8 p-4">
-      <h1 className="flex justify-center items-center text-3xl underline font-serif mb-6">Product</h1>
+      <h1 className="flex justify-center items-center text-3xl hover:underline font-serif mb-6 cursor-pointer">Suku Cadang</h1>
       <div className="md:px-32 md:py-8 px-10 py-4">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8  ">
           <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">

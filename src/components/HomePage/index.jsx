@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "animate.css";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -9,10 +10,12 @@ const Page = () => {
         <h2 className="md:text-3xl text-xl font-serif ">MMS</h2>
         <span className="font-light">Mafia Motoshop</span>
         <p className="mt-6 italic">Melayani service dan penjualan suku cadang</p>
-        <button className="bg-blue-500 rounded-full py-2 px-16 text-zinc-50 mt-2 text-sans transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 duration-300">See</button>
+        <button className="bg-blue-500 rounded-full py-2 px-16 text-zinc-50 mt-2 text-sans transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 duration-300">
+          <Link href="#about">Seee</Link>
+        </button>
       </div>
       <div className="flex justify-center items-center animate__animated animate__backInRight ">
-        <Image src="/images/bengkel.jpeg" alt="bengkel-logo" width={350} height={350} className="rounded-full px-10 bg-transparent " />
+        <Image src="/images/Logo.png" alt="bengkel-logo" width={350} height={350} className="rounded-full px-10 bg-transparent " />
       </div>
     </div>
   );
