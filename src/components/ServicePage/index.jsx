@@ -31,7 +31,7 @@ const Page = () => {
 
   return (
     <div className="md:p-10 p-4">
-      <div className="">
+      <div className="animate__animated animate__bounceInLeft">
         <h1 className="flex justify-center items-center text-3xl hover:underline font-serif mb-6 cursor-pointer">Jenis Pelayanan</h1>
         <div className="md:px-32 md:py-8 px-10 py-4">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mb-10 ">

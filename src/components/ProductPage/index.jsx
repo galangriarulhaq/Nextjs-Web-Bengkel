@@ -34,7 +34,7 @@ const Page = () => {
   ];
 
   return (
-    <div className="md:p-8 p-4">
+    <div className="md:p-8 p-4 animate__animated animate__bounceInRight">
       <h1 className="flex justify-center items-center text-3xl hover:underline font-serif mb-6 cursor-pointer">Suku Cadang</h1>
       <div className="md:px-32 md:py-8 px-10 py-4">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8">

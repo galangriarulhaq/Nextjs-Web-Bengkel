@@ -5,7 +5,7 @@ import Contact from "./Contact";
 
 const Page = () => {
   return (
-    <div className="md:p-4 p-2">
+    <div className="md:p-4 p-2 animate__animated animate__backInUp">
       <div className="mb-6">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8  ">
           <div className="">
