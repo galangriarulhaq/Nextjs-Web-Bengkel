@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "animate.css";
-import Link from "next/link";
 
 const Page = () => {
   return (
@@ -11,7 +10,7 @@ const Page = () => {
         <span className="font-light">Mafia Motoshop</span>
         <p className="mt-6 italic">Melayani service dan penjualan suku cadang</p>
         <button className="bg-blue-500 rounded-full py-2 px-16 text-zinc-50 mt-2 text-sans transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-blue-600 duration-300">
-          <Link href="#about">Seee</Link>
+          <a href="#about">Detail</a>
         </button>
       </div>
       <div className="flex justify-center items-center animate__animated animate__backInRight ">

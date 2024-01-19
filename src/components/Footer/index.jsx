@@ -46,19 +46,19 @@ const Page = () => {
             <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
             <ul className="flex space-x-4">
               <li>
-                <a href="#" className="text-white hover:text-blue-600">
+                <Link href="https://www.facebook.com/rhie55" className="text-white hover:text-blue-600">
                   <InstagramLogo size={32} />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-blue-600">
+                <Link href="https://www.instagram.com/riizkymhmd__?igsh=NXJyY2NkdnduZTM3" className="text-white hover:text-blue-600">
                   <FacebookLogo size={32} />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-blue-600">
+                <Link href="http://wa.me/081295917698" className="text-white hover:text-blue-600">
                   <WhatsappLogo size={32} />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

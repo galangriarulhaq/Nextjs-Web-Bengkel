@@ -10,7 +10,7 @@ export default function Home() {
       <section className="">
         <HomePage />
       </section>
-      <section className="">
+      <section id="#about" className="">
         <About />
       </section>
       <section className="">

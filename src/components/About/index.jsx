@@ -22,17 +22,17 @@ const Page = () => {
         <p className="text-xl text-gray-900 mb-4">Jika Anda ingin tahu lebih banyak tentang kami, Anda dapat menghubungi dan mengikuti media sosial di bawah ini.</p>
         <div className="flex flex-row gap-8 mb-4">
           <div className="hover:text-blue-600">
-            <Link href="">
+            <Link href="https://www.facebook.com/rhie55">
               <FacebookLogo size={32} />
             </Link>
           </div>
           <div className="hover:text-blue-600">
-            <Link href="">
+            <Link href="https://www.instagram.com/riizkymhmd__?igsh=NXJyY2NkdnduZTM3">
               <InstagramLogo size={32} />
             </Link>
           </div>
           <div className="hover:text-blue-600">
-            <Link href="">
+            <Link href="http://wa.me/081295917698">
               <WhatsappLogo size={32} />
             </Link>
           </div>
